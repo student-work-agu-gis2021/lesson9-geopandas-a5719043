@@ -7,6 +7,11 @@
 # 
 
 # YOUR CODE HERE 1 to read data
+import geopandas as gpd
+import pandas as pd
+from pyproj import CRS
+from shapely.geometry import LineString, Point,Polygon
+data=gpd.read_file('Kruger_posts.shp')
 
 
 # - Check the crs of the input data. If this information is missing, set it as epsg:4326 (WGS84).
